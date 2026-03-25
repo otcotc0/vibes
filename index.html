@@ -69,6 +69,7 @@
 <header>
     <h1>Train Simulaator</h1>
     <p>Everything about trains</p>
+    <input type="text" placeholder="Search trains...">
 </header>
 
 <nav>
@@ -80,6 +81,13 @@
 <section class="hero">
     <h2>Welcome to the World of Trains</h2>
     <p>Discover speed, history, and engineering marvels</p>
+    <p id="time"></p>
+<script>
+setInterval(() => {
+    document.getElementById("time").innerText =
+        new Date().toLocaleTimeString();
+}, 1000);
+</script>
 </section>
 
 <div class="container">
@@ -111,6 +119,12 @@
         </p>
     </div>
 
+</div>
+<div class="card">
+    <h2>Leave a Comment</h2>
+    <input type="text" placeholder="Your name"><br><br>
+    <textarea placeholder="Your comment"></textarea><br><br>
+    <button>Submit</button>
 </div>
 
 <footer>
